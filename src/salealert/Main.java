@@ -13,7 +13,7 @@ public class Main {
 		ResultStyle lastResult,buffer;   
 		ProdData lastProduct, newProduct;
 		
-	    //setup external classes
+		//setup external classes
 		Gson gson = new Gson();   
 		QueryBuilder queryBuilder = new QueryBuilder();
 		JsonReader jsonReader = new JsonReader();	
@@ -34,7 +34,7 @@ public class Main {
 		//check if user input is a product id or name		
 		try{  
 			//don't really care about what this is, just that productId can be converted into a number
-		    Double.parseDouble(productString);  
+			Double.parseDouble(productString);  
 		}catch(NumberFormatException nfe){  
 			//user input is not a number, assume it is product name
 			isProductId = false;		    
@@ -87,11 +87,11 @@ public class Main {
 	    	//get the next query and convert sale strings
 	    	buffer = gson.fromJson(json, ResultStyle.class);
 	    	newProduct = buffer.getIterator().next();
-		    newProduct.convertSaleStrings();
+	    	newProduct.convertSaleStrings();
 		    
-		    //check for new sales
-		    lastProduct.checkNewSales(newProduct.getIterator());
-		    lastProduct.notifyCustomer(email);	
+	    	//check for new sales
+	    	lastProduct.checkNewSales(newProduct.getIterator());
+	    	lastProduct.notifyCustomer(email);	
 		    }  
 	}
 }

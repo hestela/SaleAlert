@@ -27,8 +27,8 @@ public class Style {
 
 	public void saleStringToInt(){
 		//takes out the % from the string to convert to bigdecimal and then an int
-	    BigDecimal d = new BigDecimal(percentOff.trim().replace("%", ""));
-	  	salePercent = d.intValueExact();
+		BigDecimal d = new BigDecimal(percentOff.trim().replace("%", ""));
+	    salePercent = d.intValueExact();
 	}
 	
 	//function to set emailSent to true or false
