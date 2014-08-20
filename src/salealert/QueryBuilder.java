@@ -1,7 +1,7 @@
 package salealert;
 
 /*
- * this class allows us to create the url for jason queries in any class
+ * this class allows us to create the url for json queries in any class
  */
 public class QueryBuilder {
 	//currently using key for MindSumo challenge
