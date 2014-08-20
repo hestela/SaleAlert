@@ -4,11 +4,6 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 
-/*
- * sole purpose of this class is create the ability to get 
- * json requests from other classes with duplication of code
-*/
-
 public class JsonReader {
 	
 	public String getJsonQuery(String urlString) throws Exception {
