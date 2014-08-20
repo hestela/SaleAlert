@@ -7,7 +7,6 @@ import com.google.gson.Gson;
 public class Main {	
 	
 	public static void main(String [] args) throws Exception{
-		//declare local variables
 		String email, productString, queryUrl, json;         
 		boolean isProductId = true;
 		ResultStyle lastResult,buffer;   
